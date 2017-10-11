@@ -1,0 +1,113 @@
+****************
+* Double Linked List
+* Computer Science 221-2
+* 20 November 2015
+* Lucas Westmoreland
+**************** 
+
+OVERVIEW:
+
+ This program contains the necessary methods for the implementation of 
+ a Double Linked List. Also, it includes a file used to run a series of 
+ tests on said methods to be sure it is, in fact, a Double Linked List.
+
+
+INCLUDED FILES:
+
+ These are the included files:
+ 
+ 
+ * AbstractLinkedList.java - source file
+ * DoubleLinkedList.java - source file
+ * DoubleLinkedListADT.java - source file
+ * ElementNotFoundException.java - source file
+ * EmptyCollectionException.java - source file
+ * IndexedListADT.java - source file
+ * IndexedUnorderedListADT.java - source file
+ * LinearNode.java - source file
+ * ListADT.java - source file
+ * ListTester.java - source file
+ * UnorderedLinkedList.java - source file
+ * UnorderedListADT.java - source file
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+ From the directory containing all source files, compile the
+ driver class with the command:
+ $ javac ListTester.java
+
+ Run the compiled class file with the command:
+ $ java ListTester
+
+ Console output will give the results of the tests run on the DoubleLinkedList class
+ once the program has finished running.
+
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+ This program is intended to create a linked data structure known as a 
+ Double Linked List that consists of a series of data "nodes" that are linked
+ to their previous and next nodes. This type of link allows for the traversal
+ of the data from either direction using a list iterator that is also written
+ into the program.
+ 
+ The DoubleLinkedList class contains the necessary files to create and utilize
+ a double linked list for data storage. This class also contains the DLLIterator class
+ used to traverse back and forth throughout the list.
+ 
+ The ListTester class is written to test the DoubleLinkedList class as well
+ as the DLLIterator class methods to ensure the validity of the Double Linked
+ List and DLLIterator methods.
+ 
+ The LinearNode class holds the data type for the kind of node that is being linked
+ in the list.
+ 
+ All of the other methods are just necessary files that are used to compile the program 
+ correctly. These involve inherited methods, implementations, and Exceptions that are
+ thrown throughout the program.
+ 
+ A key feature of this program is the utilization of the ListIterator interface. This
+ is critical in the iteration through the Double Linked List.
+ 
+
+TESTING:
+
+ My program was tested by the usage of the ListTester class. I drafted
+ numerous methods in this class to check the methods in the DoubleLinkedList
+ class and catch any unexpected exceptions that I might run into. 
+ 
+ Using this tester class was extremely effective in catching the bugs in my
+ program as I ran into numerous Null Pointer Exceptions while writing the program.
+ 
+ After seeing my results from the MVListTester, I know that there 
+ are still some bugs that I hope to work out as I get more time 
+ to work on the program. Fortunately, all of the ListIterator tests that
+ I was asked to implement, were all passing by the completion of the program.
+ 
+ I am still getting some Null Pointers based on the test results from my instructors
+ test class, and this is because there must be some conditional statements that
+ I still need to include in my program. These will most likely be fixed in my 
+ Double Linked List Redemption assignment.
+
+
+DISCUSSION:
+ 
+ Writing this program brought be numerous frusterating problems. The biggest
+ problem I encountered would definitely be the NullPointerExceptions. These were
+ a result of a lack of conditional checks, wrongly written code, or incorrect variable
+ values. I got initial help from one of the lab tutors on how to efficiently use the debugger,
+ and from then on, I was able to fix the majority of the errors using the debugger and stepping
+ through the program.
+ 
+ This was easily the most challenging thing I have ever done in computer science and quite
+ possibly, the most challenging thing I've ever done. Fortunately, as I was completing this
+ project, I found myself learning more and more about the world of computer science and 
+ everything that I was unconfident about, seemed to click in my head with ease. Whether it
+ be use of the debugger, or fixing bugs, I was able to complete my project being self sufficient,
+ which is something I am proud of. 
+ 
+
+----------------------------------------------------------------------------
+
