@@ -1,0 +1,20 @@
+Lucas Westmoreland
+
+DebuggerTest2:
+ In searching for the error, I began by running the program to get a 
+ null pointer exception. In my experience with these errors, I determined
+ that there was a point in time within the code, that something was trying
+ to "point" to a value that didn't exist. Correct implementation of the 
+ breakpoints led me to an unnecessary '=' sign within the for loop.
+ 
+FindRoute:
+ In scanning over the original code, I immediately noticed a semi-colon
+ after the while loop. I didn't really need to use the debugger to see this.
+
+Car:
+ After this bug, I moved over to the Car class to find what was wrong with
+ the NextMove() method. I placed a breakpoint at the beginning of the method
+ and began running through the method. I actually ended up finding the error
+ by observing that the i--, and the i++ were switched around for the EAST and 
+ WEST directions. The program now runs with no errors.
+ 
