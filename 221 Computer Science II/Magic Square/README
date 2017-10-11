@@ -1,0 +1,90 @@
+********************
+* Project 1
+* CS 221
+* 8th Sept, 2015
+* Lucas Westmoreland
+******************** 
+
+PROJECT OVERVIEW:
+
+ This Java application reads in different files and determines if these files
+ are magic squares. The program is also able to write its own magic square with any
+ odd dimensions (3,5,7,etc.)
+
+
+INCLUDED FILES:
+
+ * README - this file
+ * MagicSquare.java - source code
+ * MagicSquareTest.java - driver class
+
+
+BUILDING AND RUNNING:
+
+ All project files should be in the same directory.
+
+ From the directory containing the .java source code, compile two .java files:
+
+	$ javac MagicSquare.java
+	$ javac MagicSquareTest.java
+
+ Run the driver class from the directory containing MagicSquare.class & MagicSquareTest.class.
+ Be sure to use the command-line arguments correctly.
+ 
+    $ java MagicSquareTest [-check | -create] [fileName] [|size]
+    
+ If the command-line arguments are not used properly, the program will not run and 
+ will tell you to re-format.
+
+ 	-check = Used to check an existing file to see if it is a magic square.
+ 	-create = Used to create a new magic square entirely.
+ 	fileName = Used in both flags to tell the program what file to check,
+ 			or what the new file should be named.
+ 	size = Only given when creating a new magic square. Must be odd!
+ 	
+ If the create argument is used, the new file will be created in the same directory
+ that the class files are located in.
+
+
+PROJECT DESIGN NOTES:
+
+ The MagicSquare class really took advantage of the use of arrays. The motif of this
+ project was the recurrence of numerous different nested for-loops in order to correctly
+ assign and retrieve certain values within a two-dimensional array. Beyond the use of arrays,
+ this project seems to have tested my knowledge of the implementation of my own methods. 
+ The use of both private and public methods brought a dynamic like nothing I had really
+ experienced. Having to draft my own methods to allow the functionality of this program
+ really tested not only my rudimentary skills, but my creative abilities as well. 
+
+ A big goal for me in designing this project was to stray away from too many unnecessary
+ variables in order to keep the code looking nice and clean. Also, this strategy allowed for
+ less confusion throughout the writing process.
+
+ The parameters in this program were kept to an absolute minimum. This allowed for easier
+ implementation of my private methods within my main methods. This also allowed for easier 
+ use within the driver class when calling those methods.
+ 
+ I was able to complete the project using the most efficient techniques I could think of.
+ The project runs successfully and there are no errors no my knowledge.
+
+
+PROJECT DEVELOPMENT AND TESTING NOTES:
+
+ When I first started, I was going in the complete wrong direction. I had the wrong
+ parameters in the wrong places and I thought all hope was lost. I began numerous different
+ testing by placing System.out's in certain conditionals to see if the program would reach
+ that certain part of the code. If the program wouldn't reach, the problem solving thought
+ process began from which I had to check the certain values of the variables at that particular
+ instance to see if they were what they needed to be. NullPointerExceptions were common but were
+ mostly because I re-defined a global variable within that method, which was a quick fix.
+ 
+ Another problem I ran into was with the createMatrix method. The first few times I ran it, I was
+ getting all 0's in each spot in the array. After a long process of testing variable values,
+ I came to the realization that the code that was assigning the values to the certain spot in the
+ array, ended up being inside the for loop. So the value itself kept on repeating.
+
+ A big problem I came across in this project, was just sheer lack of knowledge of what I actually
+ needed to do in order to get the output I sought. The tutoring center was good help to me and if I 
+ didn't have that utility, I probably would not have been able to complete this project. After 
+ completing the assignment, I feel as though a huge weight was lifted off of my shoulders. 
+
