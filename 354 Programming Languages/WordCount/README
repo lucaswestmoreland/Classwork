@@ -1,0 +1,24 @@
+Lucas Westmoreland
+Kennington
+CS 354
+5 October 2016
+
+Python Project:
+
+ Off the bat, when writing this program, I immediately noticed many convenient functions that were a little easier to implement
+ than the Java counterpart would have been. For example, there is no need to specify variable type in python, which I thought was
+ weird yet handy. Adding a dictionary that can hold any type of variable is much nicer than having a type specific array in Java.
+ The learning curve of Python was not as bad as I anticipated, however it was weird adjusting to it since I don't have a breadth of 
+ language knowledge other than a few. Online support for the tasks I was attempting to accomplish was very helpful. 
+ 
+ In addition, it seems as though python integrates the literal English language in the programming language itself. At surface, it
+ seems as though python is much more flexible than Java. As far as readability, Python is very handy in the way it forces you to properly
+ indent your code (it won't run if not properly indented). Obviously Java has been around much longer than Python, but I think with more 
+ time, Python will overcome the popularity of Java.
+ 
+ The version of Python I'm using is 3.5, which hopefully doesn't cause any problems with grading.  
+ 
+Included files:
+
+ README - this file
+ wf.py - the program
