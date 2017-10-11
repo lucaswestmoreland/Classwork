@@ -1,0 +1,18 @@
+Lucas Westmoreland
+CS 221 Debug assignment
+14 September 2015
+
+
+Changes:
+
+ 1.) The conditional in the while loop of the remove method
+ was incorrect giving us an ArrayOutOfBoundsException. This was
+ happening because the while loop wasn't getting touched by the 
+ program.
+
+ 2.) The boolean method return value was impossible to achieve as
+ rear < 0, so I changed the return to rear == 0.
+
+ 3.) We finally changed the updater on rear in the add method from
+ rear-- to rear++ because when you are adding to an array, you need 
+ to move the rear further up the array.
