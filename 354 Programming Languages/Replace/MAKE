@@ -1,0 +1,9 @@
+#!/bin/bash -x
+
+export PATH=/usr/local/bin:/usr/bin:/bin
+
+scheme --load replace.scm < /dev/null
+
+# Scheme's idea of native-code compilation.
+scheme --eval '(cf "replace")' < /dev/null
+#scheme --load replace < /dev/null
