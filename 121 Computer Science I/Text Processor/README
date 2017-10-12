@@ -1,0 +1,69 @@
+*******************************************************************************
+* Project: #4
+* Class:   Computer Science 121
+* Date:    8 April 2015
+* Name:    Lucas Westmoreland
+********************************************************************************
+
+OVERVIEW:
+
+ This program scans numerous files that the user inputs, and then displays
+ a variety of statistics to the user regarding each file.
+
+
+INCLUDED FILES:
+
+ ProcessText.java - Driver Class for the User
+ TextStatistics.java - Contains constructor and other class files
+ TextStatisticsInterface.java - These files were implemented within the TextStatistics.java file
+ TextStatisticsTest.java - Used to test the success of the program
+ README - This File
+
+
+BUILDING AND RUNNING:
+
+ Compile the program and be sure that all files in the same directory.
+ 
+ 	Usage: "java ProcessText file1 [file2 ...]"
+ 		*There must be at least one file name in the command line
+ 		arguments in order for the program to run!
+ 
+
+PROGRAM DESIGN:
+
+ In this program, my class files are based around the implementation of
+ the Scanner object. I use the scanner object to give me the information 
+ needed from the files given, like the word count, line count, char count, etc.
+ 
+ In writing the constructor class, there had to be a series of while loops in order
+ to make the most out of the file scanner. This ensured the correct statistics for each
+ line. The only other classes besides the toString and the constructor, are just designed
+ to return any of the values previously stated (word count, line count, char count, letter
+ count, etc.)
+
+
+PROGRAM DEVELOPMENT AND TESTING DISCUSSION:
+
+ At first approach, I could not have been more wrong. I attempted to 
+ get the word count, line count, and other values directly through
+ the driver class. I quickly realized that this would cause me to fail,
+ however what I had done in the drive class wasn't wrong, so I just needed
+ to copy and paste it into the constructor and make a few tweaks. The string 
+ tokenizer I believe was very tough to implement. I knew nothing about the string
+ tokenizer so I had a hard time actually building it. This was probably my biggest
+ set back because I couldn't identify the frequency of certain word lengths.
+ 
+ Sadly enough, importing the .txt files to run through the driver class was a pain
+ until I had my buddy tell me that they were in the wrong directory...
+ then it was easy. 
+ 
+ I also went through the TextStatisticsTest.java file to see what was given to me
+ and I was intrigued at how the program actually checks to see if my coding was correct.
+ I can assure you that when I saw that "Correct!" string pop up on my monitor after 
+ numerous tests, I screamed for joy.
+ 
+ Despite the struggles, the outcome was very satisfying and it was excellent 
+ seeing my hard work come to fruition. I did not like this project as much as
+ the others just because of how frustrated it made me. I believe that more work
+ on embedded while loops would make this project easier in the future.
+

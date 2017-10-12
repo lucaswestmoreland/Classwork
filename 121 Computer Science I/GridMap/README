@@ -1,0 +1,74 @@
+*******************************************************************************
+* Project: Project #3
+* Class:   CS 121
+* Date:    18 March 2015
+* Name:    Lucas Westmoreland
+*******************************************************************************
+
+OVERVIEW:
+
+ The RandomWalk program asks the user for the grid dimensions along with
+ the seed for the random number generator. It then plots points on a grid  
+ and draws a line while staying within the grid dimensions.
+
+
+INCLUDED FILES:
+
+ RandomWalk.java
+ GridMap.java 
+ RandomWalkGUI.java
+ RandomWalkTest.java
+ README.txt - this file
+
+
+BUILDING AND RUNNING:
+ All project files should be in the same directory.
+
+ Compile each file:
+    $ javac RandomWalk.java
+    $ javac GridMap.java
+    $ javac RandomWalkGUI.java
+    $ javac RandomWalkTest.java
+
+ Run the program from the directory containing the .class files:
+    $ java RandomWalkTest - this is for the plots in [#,#] format.
+    $ java RandomWalkGUI - this is for the visual representation of the walk.
+
+ You will be prompted for the gridsize, as well as the seed values of which you
+ need to enter.
+ 
+
+PROGRAM DESIGN:
+
+ The RandomWalk class contains the methods used in my test file as well as the
+ GUI. This is essentially the meat of the whole program.
+
+ The GridMap class is essentially there for a visual reference to the points
+ that are randomly placed. 
+ 
+ The RandomWalkGUI class is what contains the methods referring to the actual
+ picture of the graph. This is what draws the picture.
+ 
+ RandomWalkTest class is what I used to test my code and to make sure that my toString
+ was functioning as well as the actual mechanics within my methods.
+
+
+PROGRAM DEVELOPMENT AND TESTING DISCUSSION:
+
+ As I designed this program, I had many issues in writing my step() method.
+ At first, I attempted to use a private boolean method in order to write
+ whether or not the walk was done. I was going to implement that when defining 
+ if my variable "done" was true. However, after many frusterating attempts, I changed
+ the design by using a series of if else statements to determine if there is no more space
+ for the walk to proceed. When defining varibles and knowing when to use methods properly,
+ I believe that I have progressed substantially in the past few weeks.
+
+ With the help of my peers, I managed to work through this program and create a successful
+ RandomWalk application that functions properly. Overall I believe that this project substantially
+ increased my knowledge on the implementation of self-created methods and therefore should be
+ kept as something that truly allows the knowledge to stick to the brain.
+
+ 
+EXTRA CREDIT: (only necessary if you did available extra credit)
+
+ n/a

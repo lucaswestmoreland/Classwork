@@ -1,0 +1,4 @@
+ An action listener can be used by more than one component 
+ because you can implement what you want the action listener 
+ to do to each component by an if statement telling the listener
+ which component the user clicked.

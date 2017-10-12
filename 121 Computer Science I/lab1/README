@@ -1,0 +1,42 @@
+**********
+Lucas Westmoreland
+CS 121
+23 January 2015
+**********
+
+Initial Observations:
+  As I began coding the ConvertToSeconds program, I had to think of a way to
+  effectively code something that could do the math easily for anyone needing
+  to add together all of the seconds and do the conversions with out needing to
+  do it in their head.
+  
+  With the ConvertToHours program, I had to encorporate the mod "%" expression to
+  evaulate the remainder of the hours and use that to get the value in minutes and
+  then later, seconds. I feel I may have used too many variables however I see no
+  other way to write that code.
+  
+Description:
+  This program will ask the user to input the hours, minutes, and seconds they
+  wish to convert to seconds. The program then multiplies the hours by 3600,
+  the minutes by 60, and the seconds by 1. It then adds all of the values together
+  and then prints out "The total number of seconds is equal to x seconds."
+  
+  The ConvertToHours program will ask the user to input the amount of seconds
+  and then the program will give them the total amount of hours, minutes, and 
+  seconds. This program also gives the user the values of seconds in a fractional
+  hours values.
+  
+Errors:
+  My first error happened to be a missing ";" which gave a compiling error.
+  This was easily fixed.
+  
+  Next came an error in what was being outputted. The code was able to 
+  be compiled however my output was missing a space before "seconds" 
+  making the println display "...equal to 4860seconds."
+  
+  When writing the ConvertToHours.java program, I was so focused on making
+  sure the output was pretty, that I left out a couple of concatenations
+  giving me a compilier error. I quickly fixed these issues by adding "+"
+  into the missing spots on my println.
+  
+  

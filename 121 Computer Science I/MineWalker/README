@@ -1,0 +1,77 @@
+*******************************************************************************
+* Project: Project #5
+* Class:   CompSci 121
+* Date:    29 April 2015
+* Name:    Lucas Westmoreland
+********************************************************************************
+
+OVERVIEW:
+
+  Challenges the user to travel from one corner of the grid to the second corner of the grid and
+  "stepping" on as few mines as possible.
+
+
+INCLUDED FILES:
+
+ README - this file
+ MineWalker.java - driver class
+ MineWalkerPanel.java - main class files
+ RandomWalk.java - inherited methods
+
+
+BUILDING AND RUNNING:
+
+ All project files should be in the same directory.
+
+ From the directory containing the .java source code, compile the following programs:
+    $ javac MineWalker.java
+    $ javac MineWalkerPanel.java
+    $ javac RandomWalk.java
+
+ Run the program from the directory containing each of the .class files:
+    $ java MineWalker
+
+ The program then extends the JPanel and the game begins.
+
+ 
+
+PROGRAM DESIGN:
+
+ In this program, I implement a huge series of nested if statements in order
+ to fulfill the necessary conditionals within my program. For example, in order for
+ the program to detect where the next click is allowed, I used a series of if statements to
+ detect if the place clicked was one that was one tile away from the previous, otherwise, clicking
+ was not allowed.
+ 
+ The purpose of the RandomWalk class is to create a path on the grid that no mines will appear on.
+ Since I use a random number generator, I had to put limits on where the mines actually appear on
+ the grid. 
+ 
+ The improvements I would need to make on this program involve organization with the code;
+ considering the length of the code, I would have liked to clean it up a little more than
+ the current status.
+
+
+PROGRAM DEVELOPMENT AND TESTING DISCUSSION:
+
+ Despite the countless hours of rage and hair-pulling, my program was completed with success
+ and I am very proud of what I have created. Considering the work I put into the code, I enjoy
+ the outcome. The only issue I could not fix unfortunately, was the blinking 'X' that should be
+ wherever the current spot is. I tried for a long time and worked with a partner to try and solve
+ the problem, but to no avail.
+ 
+ The program took a lot of guess and check in testing and quite a few system.out's to make sure that
+ the program was getting to the certain code I was testing. Fortunately, I didn't get many errors when
+ building this program. What happened instead was things doing what they were not supposed to be doing.
+ This was eventually fixed. 
+ 
+ The most frustrating thing about this project and perhaps one of the most frustrating things
+ in the history of my educational career, was when I could not locate the bracket that was lost somewhere
+ in the abyss of code. Scanning for a seeming infinite amount of time through 700+ lines of code to 
+ find where that ONE BRACKET was misplaced, or missing. After finding it a took a good, long break to
+ cool off. But the struggle makes the reward all that better! 
+
+ 
+EXTRA CREDIT: (only necessary if you did available extra credit)
+
+ I put the slider on the panel but never implemented it :'(
