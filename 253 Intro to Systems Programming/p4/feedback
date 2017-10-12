@@ -1,0 +1,38 @@
+Hey Lucas, 
+
+
+Your README discussion section is lacking just a bit. Hard to give you the full 100% when other students fully followed the template, providing very specific problems with specific solutions. You DONT have to write a lot to get a 100% on these sections, for instance the following is a concise example that I would give full credit for:
+
+BUG #1 DISCOVERED:      gcc hello.c hello -o
+THE ISSUE:              incorrect ordering of gcc options, -o needs to be before the object file it re-names
+MY SOLUTION:            gcc hello.c -o hello
+
+BUG #2 DISCOVERED:
+...
+...
+
+
+Good job with using the correct dependency here ->
+hello: main.o
+        $(CC) $(CFLAGS) $^ -o $@
+
+
+Cheers,
+-Joey.
+
+===========================================
+==            GRADE BREAKDOWN            ==
+===========================================
+50/50 = P/F Grading Scripts.
+2/2 = CODE Formatting.
+5/5 = CODE Documentation/Comments.
+15/15 = CODE Avoid Copy/Paste w/Re-usable Functions.
+10/10 = CODE Semantics/Logic.
+8/8 = Adequate Testing w/in backpack.sh.
+3/5 = README Template. -2 lacking problem discussion
+2/2 = README Grammar/Spelling.
+2/2 = README Correct Statements.
+1/1 = README Sources Used.
+-0 = Late Submission.
+
+Your grade = 98

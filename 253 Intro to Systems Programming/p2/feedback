@@ -1,0 +1,72 @@
+Hey Lucas,
+
+
+main() result printing has duplicate statements! You avoided using functions here by "copy pasting" like-functionality code...
+printf("x  %-10u\t", num);
+...
+printf("x  %-10u\t", num);
+...
+Print results should be encapsulated in a function to avoid copy pasting functionally identical code.
+
+
+main() is bulky, it makes your code hard to read. main() is typically the first thing someone reads while reviewing code. You want main short, sweet, and to the point.
+For instance:
+main{
+   validate_args(...);
+   obtain_input(...);
+   solution = convert_input(...);
+   print_results( solution, ... );
+   exit(EXIT_SUCCESS);
+}
+This makes everything sort, concise, easy to read, function names increase readability, bam!
+
+
+Avoid magic numbers floating around in your code at ALL costs. Its a BAD programming practice and is guaranteed to slow down those reading your code. Don't make assumptions other eng. readers know what you do.
+For instance:
+Yours: for(i = (sizeof(int))*8 -1; i >= 0; i--)
+A better solution: for( int i=sizeof(x)*BYTE_SIZE-1; i>=0; i-- ){...}
+#define BYTE_SIZE 8
+
+
+Solution for swapBytes() is exactly what we want to see - something that's dynamic and can be used for any system (aka any byte size of an integer). This was probably the hardest problemfor this assignment, so good job.
+
+To be honest your swapBytes() looks "too" good... I'll give you the benefit of the doubt but if you're copying solutions from the internet you're only hurting yourself. Your first day of as an engineer is going to be terrifying if you just skated by cheating in school.
+
+
+No useful comments...? Especially around complex statements like the discussed next...
+
+
+I won't mark you down for statements like the one below because any old school C programmer would argue this is "efficient", but I would argue it decreases readability & with code written today ~2 extra lines to break used to break down complex statements far exceed a file being more condensed/concise (maintainability costs more than the insignificant amount of extra memory needed for the "larger" file size). 
+At the very least be more aware of this while writing code in the future. Is this stmt too complex? would it help to break it down?
+Your: return (x >> (p + 1 - n)) & ~(~0U << n);
+
+
+Begin long comment :) ->
+
+The use of functions, especially in C, is incredibly crucial to developing "good code". Functions in C do all sorts of magic for you and you should learn to use them often. 
+Functions (in my mind) MOST importantly allow for increased flexibility and future extendibility of your code. If I develop an app that does all kinds of crazy cool things and needs a algorithm to sort, print, or say format something - encapsulate the that work (say the algorithm) in a function. This way if find a more elegant formatting algorithm in the future, or new search comes out in the best way to sort something, you only have to change one line where that function was & insert a function call to the new "best working code", decreasing all kinds of dependencies within your code -> allowing for extendible code.
+Probably the next best advantage for using functions is that they allow for code reuse. Even if its only 4 lines of code, if you think you'll likely have to write that again, even once, put it in a method... believe me they help speed with your code writing.
+Functions encapsulate complex code making readability better; they reduce the block size of code making readability better; if giving useful names REALLY make reading your code more linear, logical, and easier to read.
+Functions allow developers to increase file cohesion (the grouping of like elements typically lead to more reusable and reliable code... if addToFront(list) uses getSize(list) (functions in the same file) you're increasing cohesion within that file, gaining all the benefits I just described). 
+
+Hopefully you see the usefulness of functions. This is by no means a complete list, and using functions in wrong ways like grouping unrelated code together is a terrible idea -> decreases extendibility, but hopefully this makes you more aware of some of the good programming practices related to functions when writing code.
+
+Cheers,
+-Joey.
+
+===========================================
+==            GRADE BREAKDOWN            ==
+===========================================
+50/50 = P/F Grading Scripts.
+0/2 = CODE Formatting. -2 some lines have ts=4, some ts=8 (tabstop)
+0/5 = CODE Documentation/Comments. -5 improper use or no use of comments
+10/15 = CODE Avoid Copy/Paste w/Re-usable Functions. -5 main() result printing
+18/18 = CODE Semantics/Logic.
+5/5 = README Template.
+2/2 = README Grammar/Spelling.
+2/2 = README Correct Statements.
+1/1 = README Sources Used.
+-0 = Late Submission.
+
+Your grade = 88
+

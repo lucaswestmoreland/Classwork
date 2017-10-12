@@ -1,0 +1,39 @@
+Hey Lucas, 
+
+
+README 1 or more sections lacking, specifically ->
+-2   no problems/solutions discussed or raised in discussion section...
+
+
+Backpack.sh bash shell script code:
+-1   no comments,
+-0   good line spaces,
+-0   good grouping of statements with common purpose...
+
+
+Backpack.sh bash shell script testing code:
+-1   only 1 option of wf problem tested,
+-1   no testing for wf existence before use,
+-0   testing for wf successful execution...
+
+
+Cheers,
+-Joey.
+
+===========================================
+==            GRADE BREAKDOWN            ==
+===========================================
+50/50 = P/F Grading Scripts.
+2/2 = CODE Formatting.
+5/5 = CODE Documentation/Comments. -1 comments lacking.
+15/15 = CODE Avoid Copy/Paste w/Re-usable Functions.
+10/10 = CODE Semantics/Logic.
+6/8 = Adequate Testing w/in backpack.sh. -2 lacking test code.
+5/5 = README Template. -2 discussion section lacking.
+2/2 = README Grammar/Spelling.
+2/2 = README Correct Statements.
+1/1 = README Sources Used.
+-0 = Late Submission.
+
+Your grade = 95
+
